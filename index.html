@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride Sharing Safety Features</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Safety Dashboard -->
+  <div class="safety-dashboard">
+    <h1>Ride Safety Dashboard</h1>
+
+    <!-- Trip Status -->
+    <div class="trip-status">
+      <span id="trip-status">Trip in Progress</span>
+      <div id="trip-location">Location: [Current Location]</div>
+    </div>
+
+    <!-- Audio Recording Toggle -->
+    <button id="audio-toggle" onclick="toggleRecording()">Start Audio Recording</button>
+    <p id="audio-status">Audio Recording: <span id="audio-status-text">Inactive</span></p>
+
+    <!-- Trip Monitoring -->
+    <div class="trip-monitoring">
+      <h3>Trip Monitoring</h3>
+      <div id="trip-map">Map showing the route</div>
+      <p id="trip-speed">Speed: 0 km/h</p>
+    </div>
+
+    <!-- Emergency Buttons -->
+    <button id="sos-button" onclick="triggerSOS()">SOS</button>
+    <button id="report-button" onclick="reportIncident()">Report Incident</button>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
